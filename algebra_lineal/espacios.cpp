@@ -1,35 +1,30 @@
 //dependencia lineal. 
 #include <iostream> 
+#include <algorithm>
+#include <initializer_list>
+#include <cmath> 
+#include <vector>
 
-class vector2{
+template <typename T,int fil, int col>
+class matrix{
     public: 
-        vector2(): xy{0,0} {}
-        vector2(float a, float b): xy{a,b} {}
-        float xy[2];
+        matrix(): data(fil*col, T{}) {}
+        //matrix(std::vector<T> 1, std::vector<T> 2, std::vector<T> 3): data(){for, asignando cada valor a cada posicion de la matrix.}
+        matrix(std::initializer_lst<T> lst) : data(lst) {
+            if(data.size() < col*fil){
+                data.resize(fil*col,t{});
+            }
+        }
+
+        int get_col()const{return col; }
+        int get_fil()const{return fil; }
+    private:
+        std::vector<T> datos;
+        
 };
 
-class Matrix2{
-    public: 
-        Matrix2(): mn{} {} 
-        Matrix2(const vector2& a, const vector2& b): mn{{a.xy[0], b.xy[0]},{a.xy[1],b.xy[1]}} {} 
-        float mn[2][2];
 
-};
-std::ostream& operator<<(std::ostream& out, const vector2& a){
-    return out << "Vector:\n" <<  '|' << a.xy[0] << "|\n|" << a.xy[1] << "|\n"; 
-}
-std::ostream& operator<<(std::ostream& out, const Matrix2& a){
-    return out << "Matrix:\n" << '|' << a.mn[0][0] << '|' << a.mn[0][1] << '|' << '\n' << '|' << a.mn[1][0] << '|' << a.mn[1][1] << "|\n"; 
-}
 
-/*Se dice que en el algebra lineal que n vectores en un espacio vectorial V. Entonces se dice que los vectores son linealmente dependientes si existen N escalares no todos cero
-tales que c1v1 + c2v2 + ... + cnvn = 0*/
-
-int main(){
-    vector2 a = {3,4};
-    vector2 b = {2,1};
-    Matrix2 c = {a,b};
-    std::cout << a;
-    std::cout << c;    
+int main(){ 
     return 0; 
 }
