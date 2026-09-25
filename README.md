@@ -22,6 +22,8 @@
 - [x] 07: dependencia lineal 
 - [x] 10: Vector con memoria libre empezado
 - [x] 14: Sigiendo con Matrix y Vector libre. 
+- [x] 24: Polyrithm 
+
 
 
 
