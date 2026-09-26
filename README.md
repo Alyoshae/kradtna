@@ -1,6 +1,6 @@
-## MAÑANA
+## 
 - Proyectos personales para mi crecimiento como matematico y programador.
-- Actualmente soy estudiante de l a facultad de ciencias fisico matematico en monterrey Nuevo Léon. 
+- Actualmente soy estudiante de la facultad de ciencias fisico matematico en monterrey Nuevo Léon. 
 - Como hobbie suelo leer y tocar la guitarra. 
 
 ## FORMULARIO COMMITS 
@@ -23,17 +23,5 @@
 - [x] 10: Vector con memoria libre empezado
 - [x] 14: Sigiendo con Matrix y Vector libre. 
 - [x] 24: Polyrithm 
+- [x] 25: Terminamos la matematica simple del compas, falta bpm e interfaz.
 
-
-
-
-
-
-## RERENCIAS 
-- Bjarne stroustrup /CPP 
-- Algebra Lineal /Grossman 
-- Calculo /Louis Leithol 
-- Calculo /James Stewart 
-- Algebra /lehman 
-- Learncpp.com
-- Facultad de ciencias fisico matematico /UANL 
